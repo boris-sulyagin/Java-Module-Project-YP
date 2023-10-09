@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.xml.transform.Source;
-
 // Калькулятор
 
 public class Сalculator {
@@ -50,9 +48,17 @@ public class Сalculator {
 
         if (title.equals(product.title)) {
             title = localTitle;
-            title.concat(" - ").concat(String.valueOf(price)).concat(" ").concat(formatter.switchPrice(price));
+            title.concat(" - ")
+                    .concat(String.valueOf(price))
+                    .concat(" ")
+                    .concat(formatter.switchPrice(price));
         } else {
-            title = title.concat("\n").concat(localTitle).concat(" - ").concat(String.valueOf(price).concat(" ").concat(formatter.switchPrice(price)));
+            title = title.concat("\n")
+                    .concat(localTitle)
+                    .concat(" - ")
+                    .concat(String.valueOf(price)
+                            .concat(" ")
+                            .concat(formatter.switchPrice(price)));
         } return title;
     }
 
