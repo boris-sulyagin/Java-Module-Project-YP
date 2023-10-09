@@ -1,6 +1,10 @@
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        // Создаём класс для подсчёта человек
+        Counter counter = new Counter();
+        // Вызываем функцию для подсчёта
+        counter.count();
+
     }
 }
